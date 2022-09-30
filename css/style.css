@@ -1,0 +1,262 @@
+@font-face {
+    font-family: Tajawal;
+    src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: Tajawal;
+    background-color: #f1f1f1 !important;
+}
+
+
+
+
+/*********************
+*********************
+Navbar
+*********************
+*********************/
+nav.navbar {
+    height: 96px;
+    box-shadow: 3px 3px 18px 0px #E5E5E580;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(-90deg, #ED402E 0%, #C44862 50%, #9D296A 100%);
+
+}
+
+nav.navbar .navbar-brand {
+    min-width: 138.24px;
+    margin-left: 20px;
+}
+
+
+nav.navbar .navbar-nav a.nav-link {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 19px;
+    color: #ED402E;
+    margin-left: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+
+}
+
+nav.navbar .navbar-nav a.nav-link:hover {
+    background-color: rgb(206, 206, 206);
+    color: #c43525;
+
+}
+
+nav.navbar form {
+    width: 35%;
+    margin-left: 20px;
+}
+
+nav.navbar form input {
+    border-radius: 20px;
+}
+
+
+/*********************
+*********************
+End Navbar
+*********************
+*********************/
+
+
+/*********************
+*********************
+Offer Carousel
+*********************
+*********************/
+
+section.OfferCarousel .carousel .carousel-inner {
+    height: 80vh;
+}
+
+section.OfferCarousel .carousel .carousel-control-prev, section.OfferCarousel .carousel .carousel-control-next {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    height: 70px;
+    margin: auto 30px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+
+/*********************
+*********************
+End Offer Carousel
+*********************
+*********************/
+
+/*********************
+*********************
+Pink seperator
+*********************
+*********************/
+.PinkSeperator .PinkLine {
+    border:1px solid #F29BB2;
+    height: 1px;
+    margin: auto;
+}
+.PinkSeperator .PinkSectionTitle{
+    color: #9D296A;
+    font-weight: bolder;
+    text-align: center;
+}
+.PinkSeperator .ShowAll a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 15px;
+}
+/*********************
+*********************
+end Pink seperator
+*********************
+*********************/
+
+
+
+/*********************
+*********************
+RoundedImageCarousel
+*********************
+*********************/
+
+section.RoundedImageCarousel {
+    background-color: white;
+    padding: 30px 0px;
+}
+section.RoundedImageCarousel .carousel .carousel-inner{
+    padding: 0 50px;
+}
+section.RoundedImageCarousel .carousel .carousel-inner .card {
+    border:none;
+    text-align: center;
+}
+section.RoundedImageCarousel  .carousel .carousel-inner .card img {
+    border-radius: 50%;
+    width: 75%;
+}
+section.RoundedImageCarousel  .carousel .carousel-inner .card .card-body .card-title {
+    font-size: 18px;
+    margin-top: 20px;
+    color: rgb(63, 63, 63);
+    font-style: italic;
+    font-weight: 700;
+}
+section.RoundedImageCarousel .carousel .carousel-control-prev, section.RoundedImageCarousel .carousel .carousel-control-next {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    height: 50px;
+    margin: auto 30px;
+    width: 50px;
+    border: 2px solid black;
+    text-align: center;
+}
+/*********************
+*********************
+End RoundedImageCarousel
+*********************
+*********************/
+
+/*********************
+*********************
+ 3 Cards Part
+*********************
+*********************/
+section.Cards3Part .row{
+    background-color: transparent;
+}
+section.Cards3Part .Card3{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+section.Cards3Part .Card3 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*********************
+*********************
+ End 3 Cards Part
+*********************
+*********************/
+
+
+
+
+/*********************
+*********************
+ProductCarouse
+*********************
+*********************/
+.ProductCarouse .carousel .carousel-inner .row{
+    background-color: transparent;
+}
+.ProductCarouse .carousel .carousel-inner .carousel-item .card{
+    border: 2px solid #f1f1f1;
+    background-color: white;
+}
+
+.ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title {
+font-weight: 600;
+color: #5a5a5a;
+font-size: 18px;
+line-height: 25px;
+}
+.ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span {
+    font-size: 15px;
+    color: #a7a7a7;
+    font-weight: normal;
+
+}
+.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .rating{
+    color: rgb(232, 236, 0);
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .rating .RatingNumber{
+    font-size: 15px;
+    color: #a7a7a7;
+}
+.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .card.CardPrice .Price p.before{
+    text-decoration: line-through;
+    color: #a7a7a7;;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .card.CardPrice {
+    border: none;
+}
+.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .card.CardPrice .Price p.after{
+    color: #c43525;
+    font-size: 18px;
+    font-weight: bold;
+}
+.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .card.CardPrice  .card-body .Sale{
+    background-color: #c425c41a;
+    border-radius: 20px;
+    width: 70px;
+    direction: ltr;
+    color: #c43525;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+/*********************
+*********************
+End ProductCarouse
+*********************
+*********************/
