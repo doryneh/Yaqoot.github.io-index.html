@@ -75,10 +75,6 @@ Offer Carousel
 *********************
 *********************/
 
-section.OfferCarousel .carousel .carousel-inner {
-    height: 80vh;
-}
-
 section.OfferCarousel .carousel .carousel-control-prev, section.OfferCarousel .carousel .carousel-control-next {
     background-color: white;
     border-radius: 5px;
