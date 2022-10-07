@@ -3,13 +3,14 @@
     src: url(../fonts/Almarai/Almarai-Regular.ttf);
 }
 
-body {
+body, body.categoryBody {
     direction: rtl;
-    font-family: Almarai !important ;
+    font-family: Almarai !important;
     background-color: #f1f1f1 !important;
 }
-body.productBody{
-    background-color:#ffffff !important;
+
+body.productBody {
+    background-color: #ffffff !important;
 
 }
 
@@ -21,24 +22,27 @@ Navbar
 *********************
 *********************/
 nav.navbar {
-    height: 96px;
-    box-shadow: 3px 3px 18px 0px #E5E5E580;
     position: relative;
     text-align: center;
-    background: linear-gradient(-90deg, #ED402E 0%, #C44862 50%, #9D296A 100%);
+    background: linear-gradient(90deg, #F49996 0%, #EC4D49 25%, #9E2261 100%);
+    direction: rtl;
 
 }
 
 nav.navbar .navbar-brand {
-    min-width: 138.24px;
+    width: 100px;
     margin-left: 20px;
+
+}
+nav.navbar .navbar-brand img{
+    width: 100%;
 }
 
 
-nav.navbar .navbar-nav a.nav-link {
+nav.navbar .navbar-nav a.nav-link, nav.navbar  .dropdown button {
     font-weight: 500;
     font-size: 17px;
-    line-height: 19px;
+    line-height: 25px;
     color: #ED402E;
     margin-left: 30px;
     background-color: white;
@@ -46,13 +50,17 @@ nav.navbar .navbar-nav a.nav-link {
     padding: 10px;
     width: 40px;
     height: 40px;
-
 }
-
+nav.navbar  .dropdown button {
+    padding: 0;
+}
 nav.navbar .navbar-nav a.nav-link:hover {
     background-color: rgb(206, 206, 206);
     color: #c43525;
 
+}
+nav.navbar .navbar-nav a.nav-link .badge {
+    border: 2px solid #ffffff;
 }
 
 nav.navbar form {
@@ -64,6 +72,84 @@ nav.navbar form input {
     border-radius: 20px;
 }
 
+/*DropDown Mega Menu */
+nav.navbar .navbar-nav .dropdown button {
+    background-color: transparent;
+    color: #ED402E;
+    border: none;
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+}
+
+nav.navbar .navbar-nav .dropdown button:hover {
+    color: #c43525;
+}
+
+nav.navbar .navbar-nav .dropdown {
+    padding: 0;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+nav.navbar .dropdown-menu {
+    position: relative;
+    min-height: 300px;
+}
+
+nav.navbar .dropdown-menu li {
+    direction: rtl;
+    margin-bottom: 2px;
+}
+
+nav.navbar .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    bottom: 0px;
+}
+
+nav.navbar .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+nav.navbar .dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+}
+nav.navbar .offcanvas .offcanvas-body{
+    background-color: rgb(245, 245, 245);
+}
+nav.navbar .offcanvas .offcanvas-body p.priceRange{
+    font-size: 12px;
+    text-align: right;
+    font-weight: bold;
+}
+nav.navbar .offcanvas .progress{
+    height: 7px !important;
+}
+nav.navbar .offcanvas .progress .progress-bar{
+    background: linear-gradient(90deg, black 0%, #9E2261 95% ,white 100%);
+
+}
+nav.navbar .offcanvas .card{
+    background-color: white;
+    border: none;
+    text-align: right;
+}
+nav.navbar .offcanvas .card .card-body{
+    padding: 10px 10px 0 0;
+}
+nav.navbar .offcanvas .card .card-title{
+    font-size: 11px;
+}
+nav.navbar .offcanvas .card  .card-title-span{
+    font-size: 13px;
+    margin-bottom:0 ;
+}
+/*End DropDown */
 
 /*********************
 *********************
@@ -101,22 +187,25 @@ Pink seperator
 *********************
 *********************/
 .PinkSeperator .PinkLine {
-    border:1px solid #F29BB2;
+    border: 1px solid #F29BB2;
     height: 1px;
     margin: auto;
 }
-.PinkSeperator .PinkSectionTitle{
+
+.PinkSeperator .PinkSectionTitle {
     color: #9D296A;
     font-weight: bolder;
     text-align: center;
     font-size: 20px;
 }
-.PinkSeperator .ShowAll a{
+
+.PinkSeperator .ShowAll a {
     color: black;
     font-weight: bolder;
     text-decoration: none;
     font-size: 15px;
 }
+
 /*********************
 *********************
 end Pink seperator
@@ -132,29 +221,36 @@ RoundedImageCarousel
 *********************/
 
 section.RoundedImageCarousel {
-    background-color: white;
     padding: 30px 0px;
 }
-section.RoundedImageCarousel .carousel .carousel-inner{
-    padding: 0 50px;
-}
+
+
+
 section.RoundedImageCarousel .carousel .carousel-inner .card {
-    border:none;
+    border: none;
     text-align: center;
+    padding: 50px 0px;
 }
-section.RoundedImageCarousel  .carousel .carousel-inner .card img {
+section.RoundedImageCarousel .carousel .carousel-inner .card a{
+    text-decoration: none;
+}
+section.RoundedImageCarousel .carousel .carousel-inner .card img {
     border-radius: 50%;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 0.1px solid #0000002c;
 }
-section.RoundedImageCarousel  .carousel .carousel-inner .card .card-body .card-title {
+
+section.RoundedImageCarousel .carousel .carousel-inner .card .card-body .card-title {
     font-size: 18px;
     margin-top: 20px;
     color: rgb(63, 63, 63);
     font-style: italic;
     font-weight: 700;
 }
-section.RoundedImageCarousel .carousel .carousel-control-prev, section.RoundedImageCarousel .carousel .carousel-control-next ,.ProductCarouse .carousel .carousel-control-next ,.ProductCarouse .carousel .carousel-control-prev {
+
+section.RoundedImageCarousel .carousel .carousel-control-prev, section.RoundedImageCarousel .carousel .carousel-control-next, .ProductCarouse .carousel .carousel-control-next, .ProductCarouse .carousel .carousel-control-prev {
     background-color: white;
     border-radius: 5px;
     color: black;
@@ -164,6 +260,7 @@ section.RoundedImageCarousel .carousel .carousel-control-prev, section.RoundedIm
     border: 2px solid black;
     text-align: center;
 }
+
 /*********************
 *********************
 End RoundedImageCarousel
@@ -175,16 +272,18 @@ End RoundedImageCarousel
  3 Cards Part
 *********************
 *********************/
-section.Cards3Part .row{
+section.Cards3Part .row {
     background-color: transparent;
 }
-section.Cards3Part .Card3{
+
+section.Cards3Part .Card3 {
     padding: 10px;
     background-color: white;
     border-radius: 10px;
 
 }
-section.Cards3Part .Card3 img{
+
+section.Cards3Part .Card3 img {
     width: 100%;
     border-radius: 10px;
 }
@@ -203,57 +302,88 @@ section.Cards3Part .Card3 img{
 ProductCarouse
 *********************
 *********************/
-.ProductCarouse .carousel .carousel-inner .row{
+.ProductCarouse .carousel .carousel-inner .row {
     background-color: transparent;
 }
-.ProductCarouse .carousel .carousel-inner .carousel-item .card{
+
+.ProductCarouse .carousel .carousel-inner .carousel-item .card, section.category .categoryProduct .card {
     border: 2px solid #f1f1f1;
     background-color: white;
     padding: 0px 5px;
-   
+    width: 16%;
+    margin-left: 5px;
+    position: relative;
 }
-.ProductCarouse .carousel .carousel-inner .carousel-item .card a{
+
+.ProductCarouse .carousel .carousel-inner .carousel-item .card img, section.category .categoryProduct .card img{
+    padding: 10px;
+}
+.ProductCarouse .carousel .carousel-inner .carousel-item .card .newBtn, section.category .categoryProduct .card .newBtn{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background-color: #ee524f;
+    color: white;
+    border-radius: 20px;
+    width: 70px;
+    text-align: center;
+}
+section.category .categoryProduct .card {
+    width: 19.05%;;
+}
+
+.ProductCarouse .carousel .carousel-inner .carousel-item .card a, section.category .categoryProduct .card a {
     text-decoration: none;
 }
 
-.ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title {
-font-weight: 600;
-color: #5a5a5a;
-font-size: 15px;
-line-height: 25px;
+.ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title, section.category .categoryProduct .card h5.card-title {
+    font-weight: 600;
+    color: #5a5a5a;
+    font-size: 13px;
+    line-height: 25px;
 }
-.ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span {
+
+.ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span, section.category .categoryProduct .card h5.card-title span {
     font-size: 13px;
     color: #a7a7a7;
     font-weight: normal;
 
 }
-.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .rating{
+
+.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .rating, section.category .categoryProduct .card .card-text .rating {
     color: rgb(232, 236, 0);
     line-height: 25px;
     margin-bottom: 10px;
     font-size: 15px;
 
 }
-.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .rating .RatingNumber{
+
+.ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .rating .RatingNumber, section.category .categoryProduct .card .card-text .rating .RatingNumber {
     font-size: 13px;
     color: #a7a7a7;
 }
- .card.CardPrice .Price p.before{
+
+.card.CardPrice .Price p.before {
     text-decoration: line-through;
-    color: #a7a7a7;;
+    color: #a7a7a7;
     font-size: 10px;
     margin-bottom: 0;
 }
- .card.CardPrice {
+
+.card.CardPrice {
     border: none !important;
+    width: 100% !important;
 }
- .card.CardPrice .Price p.after{
+
+.card.CardPrice .Price p.after {
     color: #c43525;
     font-size: 14px;
     font-weight: bold;
 }
-.card.CardPrice  .card-body .Sale{
+.card.CardPrice .card-body{
+    padding: 0;
+}
+.card.CardPrice .card-body .Sale {
     background-color: #c425c41a;
     border-radius: 20px;
     width: 50px;
@@ -263,6 +393,7 @@ line-height: 25px;
     font-weight: bold;
     padding: 5px;
 }
+
 /*********************
 *********************
 End ProductCarouse
@@ -274,11 +405,21 @@ End ProductCarouse
 BreadCrumb
 *********************
 *********************/
-nav.breadcrumb li a,.breadcrumb-item+.breadcrumb-item::before{
+nav.breadcrumb li a, .breadcrumb-item+.breadcrumb-item::before {
     font-size: 25px;
     color: black !important;
     text-decoration: none;
     font-weight: bold;
+}
+
+.categoryBody .breadcrumb .breadcrumb-item a, .categoryBody .breadcrumb-item+.breadcrumb-item::before {
+    font-size: 10px;
+    line-height: 15px;
+
+}
+
+.categoryBody .breadcrumb-item+.breadcrumb-item::before {
+    margin-top: 5px;
 }
 
 /*********************
@@ -292,32 +433,37 @@ End BreadCrumb
 Product Description
 *********************
 *********************/
-section.productDescription{
+section.productDescription {
     border-top: 4px solid rgb(243, 243, 243);
 
 }
-section.productDescription .nav-tabs,section.productDescription .nav-tabs .nav-link{
-    color: rgb(153, 153, 153) ;
+
+section.productDescription .nav-tabs, section.productDescription .nav-tabs .nav-link {
+    color: rgb(153, 153, 153);
     border: none;
-    font-weight: bolder ;
+    font-weight: bolder;
     margin-left: 30px;
     font-size: 17px;
 }
-section.productDescription  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+
+section.productDescription .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: black !important;
     border: none;
     border-bottom: 3px solid black !important;
 }
-section.productDescription   .tab-content>.active{
+
+section.productDescription .tab-content>.active {
     font-size: 15px;
     margin-top: 20px;
     line-height: 30px;
     color: #676767;
     font-weight: 450;
 }
-section.productDescription   .tab-content>.active b{
+
+section.productDescription .tab-content>.active b {
     color: black;
 }
+
 /*********************
 *********************
 End Product Description
@@ -330,19 +476,21 @@ End Product Description
  Product Details
 *********************
 *********************/
-section.productDetails .carousel .carousel-indicators{
+section.productDetails .carousel .carousel-indicators {
     position: unset;
     display: unset;
     margin-left: 0;
     margin-bottom: 0;
-     margin-right: 0%;
+    margin-right: 0%;
 }
-section.productDetails .carousel .carousel-indicators button{
+
+section.productDetails .carousel .carousel-indicators button {
     width: 50px;
     height: 50px;
     position: relative;
 }
-section.productDetails .carousel .carousel-indicators button.like{
+
+section.productDetails .carousel .carousel-indicators button.like {
     background-color: rgba(0, 174, 255, 0.137);
     border-radius: 50%;
     border: none;
@@ -350,7 +498,8 @@ section.productDetails .carousel .carousel-indicators button.like{
     font-size: 20px;
     margin: 10px 5px;
 }
-section.productDetails .carousel .carousel-indicators button.share{
+
+section.productDetails .carousel .carousel-indicators button.share {
     background-color: #a7a7a767;
     border-radius: 50%;
     border: none;
@@ -359,75 +508,209 @@ section.productDetails .carousel .carousel-indicators button.share{
     margin-right: 5px;
     margin-left: 5px;
 }
-section.productDetails .carousel .carousel-indicators button.active{
+
+section.productDetails .carousel .carousel-indicators button.active {
     border: 1px solid #ED402E;
 }
-section.productDetails .carousel .carousel-indicators button img{
+
+section.productDetails .carousel .carousel-indicators button img {
     width: 50px;
     height: 50px;
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(50%,-50%);
+    transform: translate(50%, -50%);
 }
-section.productDetails  .addToCart{
+section.productDetails .input-group > .form-control, section.productDetail .input-group > .form-select{
+    width: 10px !important;
+    font-size: 13px;
+    padding: 3px;
+    text-align: center;
+    color: black;
+}
+section.productDetails .ProductDescriptionBtn{
+    margin: auto 0;
+}
+section.productDetails  .input-group .btn{
+    width: 20px;
+    padding: 0;
+    border: 1px solid rgba(128, 128, 128, 0.479);
+}
+section.productDetails .addToCart {
     border-radius: 20px;
     background-color: #9D296A;
     color: white;
     width: 100%;
     font-weight: bold;
-    margin:15px 0;
-   
+    margin: 15px 0;
+
 }
+
 section.productDetails .deepDetails .card {
     border: none !important;
 }
-section.productDetails .deepDetails .card  h5.original{
+
+section.productDetails .deepDetails .card h5.original {
     font-size: 13px;
     color: rgb(0, 170, 0);
     font-weight: bold;
 }
-section.productDetails .deepDetails .card  .moreBrand{
+
+section.productDetails .deepDetails .card .moreBrand {
     font-size: 13px;
     font-weight: bold;
     color: #111111;
 }
-section.productDetails .deepDetails .card  .moreBrand span{
+
+section.productDetails .deepDetails .card .moreBrand span {
     color: purple;
 }
-section.productDetails .deepDetails  .card.CardPrice .Price p.before{
+
+section.productDetails .deepDetails .card.CardPrice .Price p.before {
     font-size: 22px;
 }
 
-section.productDetails .deepDetails  .card.CardPrice .Price p.after{
+section.productDetails .deepDetails .card.CardPrice .Price p.after {
     font-size: 25px;
 }
-section.productDetails .deepDetails  .card.CardPrice  .card-body .Sale{
+
+section.productDetails .deepDetails .card.CardPrice .card-body .Sale {
     width: 80px;
     font-size: 25px;
     text-align: center;
-    
+
 }
-section.productDetails .deepDetails  .ProductSize .form-check input{
+
+section.productDetails .deepDetails .ProductSize .form-check input {
     background-image: url(../images/faceCream.png);
     width: 70px;
     height: 70px;
     border-radius: 50%;
     filter: blur(2px);
-  -webkit-filter: blur(2px);
-}
-section.productDetails .deepDetails  .ProductSize .form-check input:checked{
-       filter: blur(0px);
-  -webkit-filter: blur(0px);
-   border: 1px solid black;
+    -webkit-filter: blur(2px);
 }
 
-/*************
+section.productDetails .deepDetails .ProductSize .form-check input:checked {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border: 1px solid black;
+}
+
 /*********************
 *********************
 End Product Details
 *********************
 *********************/
+
+
+/*********************
+*********************
+Filter Accordion
+*********************
+*********************/
+.category .filter {
+    height: fit-content;
+}
+
+.category .filter .accordion-flush .accordion-item .accordion-button {
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: none;
+    display: unset;
+}
+.category .filter .accordion-flush .accordion-item .accordion-button span{
+    font-size: 15px;
+    font-weight: bold;
+    background-image: url(../images/plus.png);
+    background-size: cover;
+    width: 8px;
+    height: 8px;
+    transition: 0.2s all ease;
+}
+.category .filter .accordion-button:not(.collapsed) {
+    color: unset;
+    background-color: unset;
+    box-shadow: none;
+}
+.category .filter .accordion-button:not(.collapsed) span {
+    background-image: url(../images/minus.png) !important;
+}
+
+
+.category .filter .accordion-button::after {
+    display: none;
+}
+
+.category .filter .form-control {
+    font-size: 12px;
+}
+
+.category .filter .form-check label.form-check-label {
+    font-size: 13px;
+}
+
+.category .filter .accordion-body {
+    margin-bottom: 20px;
+    padding-right: 15px !important;
+}
+
+/*********************
+*********************
+End Filter Accordion 
+*********************
+*********************/
+
+
+
+/*********************
+*********************
+categoryProduct 
+*********************
+*********************/
+.category .categoryProduct .form-select {
+    padding:  5px;
+    width: 250px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.category .categoryProduct button.AddToCart.btn {
+    color: #8d008d;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*Pagination*/
+
+.category .categoryProduct nav ul.pagination li {
+
+width: 36px;
+height: 36px;
+margin-left: 10px;
+}
+.category  .categoryProduct nav ul.pagination li a {
+    border: none;
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+    text-align: center;
+
+}
+
+.category  .categoryProduct nav ul.pagination li a.active{
+    background-color: #9D296A;
+    border-radius: 50%;
+    color: white;
+}
+/*End Pagination*/
+
+
+/*********************
+*********************
+End categoryProduct 
+*********************
+*********************/
+
 
 /*********************
 *********************
@@ -435,94 +718,94 @@ Footer
 *********************
 *********************/
 
-footer .top-footer {
-    background-color: #171717;
-    padding: 75px 0;
-}
+    footer .top-footer {
+        background-color: #171717;
+        padding: 75px 0;
+    }
 
-footer .top-footer h3 {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #c43525;
-    line-height: 45px;
-    position: relative;
-}
+    footer .top-footer h3 {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #c43525;
+        line-height: 45px;
+        position: relative;
+    }
 
-footer .top-footer h3::before {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 35px;
-    height: 2px;
-    background-color: #5c5c5c;
-}
+    footer .top-footer h3::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 35px;
+        height: 2px;
+        background-color: #5c5c5c;
+    }
 
-footer .top-footer p {
-    font-size: 15px;
-    color: #919191;
-    line-height: 22px;
-    margin-bottom: 50px;
-}
+    footer .top-footer p {
+        font-size: 15px;
+        color: #919191;
+        line-height: 22px;
+        margin-bottom: 50px;
+    }
 
-footer .top-footer ul {
-    padding: 0;
-}
+    footer .top-footer ul {
+        padding: 0;
+    }
 
-footer .top-footer ul.social li {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 35px;
-    border-radius: 2px;
-    background-color: #333333;
-    margin-right: 5px;
-    transition: all .5s ease;
-    position: relative;
-}
+    footer .top-footer ul.social li {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 2px;
+        background-color: #333333;
+        margin-right: 5px;
+        transition: all .5s ease;
+        position: relative;
+    }
 
-footer .top-footer ul.social li a {
-    color: #ffffff;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-}
+    footer .top-footer ul.social li a {
+        color: #ffffff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
 
-footer .top-footer ul.contact-us li {
-    margin-bottom: 35px;
-    font-size: 18px;
-    color: #676767;
-}
+    footer .top-footer ul.contact-us li {
+        margin-bottom: 35px;
+        font-size: 18px;
+        color: #676767;
+    }
 
-footer .top-footer ul.contact-us li:last-of-type {
-    margin-bottom: 0px;
-}
+    footer .top-footer ul.contact-us li:last-of-type {
+        margin-bottom: 0px;
+    }
 
-footer .top-footer ul.contact-us li .icons {
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    background-color: #282828;
-    display: inline-block;
-    line-height: 35px;
-    border-radius: 2px;
-    color: #ffffff;
-    margin-left: 20px;
-}
+    footer .top-footer ul.contact-us li .icons {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        background-color: #282828;
+        display: inline-block;
+        line-height: 35px;
+        border-radius: 2px;
+        color: #ffffff;
+        margin-left: 20px;
+    }
 
-footer .copyright {
-    background-color: #111111;
-}
+    footer .copyright {
+        background-color: #111111;
+    }
 
-footer .copyright p {
-    line-height: 78px;
-    font-size: 15px;
-    color: #919191;
-    margin-bottom: 0;
-}
-/*********************
+    footer .copyright p {
+        line-height: 78px;
+        font-size: 15px;
+        color: #919191;
+        margin-bottom: 0;
+    }
+
+    /*********************
 *********************
 End Footer
 *********************
 *********************/
-
