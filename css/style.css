@@ -71,54 +71,7 @@ nav.navbar form {
 nav.navbar form input {
     border-radius: 20px;
 }
-
-/*DropDown Mega Menu */
-nav.navbar .navbar-nav .dropdown button {
-    background-color: transparent;
-    color: #ED402E;
-    border: none;
-    width: 40px;
-    height: 40px;
-    box-shadow: none;
-}
-
-nav.navbar .navbar-nav .dropdown button:hover {
-    color: #c43525;
-}
-
-nav.navbar .navbar-nav .dropdown {
-    padding: 0;
-}
-
-.dropdown-toggle::after {
-    display: none !important;
-}
-
-nav.navbar .dropdown-menu {
-    position: relative;
-    min-height: 300px;
-}
-
-nav.navbar .dropdown-menu li {
-    direction: rtl;
-    margin-bottom: 2px;
-}
-
-nav.navbar .dropdown-menu .dropdown-submenu {
-    display: none;
-    position: absolute;
-    right: 100%;
-    bottom: 0px;
-}
-
-nav.navbar .dropdown-menu .dropdown-submenu-left {
-    right: 100%;
-    left: auto;
-}
-
-nav.navbar .dropdown-menu>li:hover>.dropdown-submenu {
-    display: block;
-}
+/*Cart*/ 
 nav.navbar .offcanvas .offcanvas-body{
     background-color: rgb(245, 245, 245);
 }
@@ -149,7 +102,105 @@ nav.navbar .offcanvas .card  .card-title-span{
     font-size: 13px;
     margin-bottom:0 ;
 }
+/*end Cart*/
+
+/*Notification*/
+nav.navbar .navbar-nav  .offcanvas-body .offers {
+    margin: auto;
+    padding: 100px 50px;
+}
+nav.navbar .navbar-nav .offcanvas-body .offers svg{
+    font-size: 80px;
+    opacity: 0.3;
+    margin-bottom: 30px;
+}
+nav.navbar .navbar-nav .offcanvas-body .offers p.emptyNotification{
+    font-size: 20px ;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+nav.navbar .navbar-nav .offcanvas-body .offers p{
+    font-size: 15px;
+    font-weight: 500;
+}
+/*end notification*/
+
+/*DropDown Mega Menu */
+nav.navbar  .dropdown button {
+    background-color: transparent;
+    color: #ED402E;
+    border: none;
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+}
+
+nav.navbar .dropdown button:hover {
+    color: #c43525;
+}
+
+nav.navbar .dropdown {
+    padding: 0;
+    height: 40px !important;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+nav.navbar .dropdown-menu {
+    position: relative;
+    min-height: 300px;
+    top: unset;
+}
+
+nav.navbar .dropdown-menu li {
+    direction: rtl;
+    margin-bottom: 2px;
+}
+
+nav.navbar .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    bottom: 0px;
+}
+
+nav.navbar .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+nav.navbar .dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+}
 /*End DropDown */
+
+
+nav.navbar .NavParts .list-group .list-group-item{
+    background-color: transparent;
+    border: none;
+ 
+}
+nav.navbar .NavParts .list-group .list-group-item.withBorder{
+    border-left: 1px solid white;
+}
+nav.navbar .NavParts .list-group .list-group-item a{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+nav.navbar .NavParts .list-group .list-group-item a:hover{
+    color: antiquewhite;
+}
+
+
+
+
 
 /*********************
 *********************
@@ -229,7 +280,7 @@ section.RoundedImageCarousel {
 section.RoundedImageCarousel .carousel .carousel-inner .card {
     border: none;
     text-align: center;
-    padding: 50px 0px;
+    padding: 10px 0px;
 }
 section.RoundedImageCarousel .carousel .carousel-inner .card a{
     text-decoration: none;
@@ -255,7 +306,7 @@ section.RoundedImageCarousel .carousel .carousel-control-prev, section.RoundedIm
     border-radius: 5px;
     color: black;
     height: 50px;
-    margin: auto 30px;
+    margin: auto 0px;
     width: 50px;
     border: 2px solid black;
     text-align: center;

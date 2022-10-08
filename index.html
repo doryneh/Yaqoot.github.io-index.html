@@ -14,28 +14,59 @@
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex pt-3">
-        <div class="container">
+        <div class="container ">
             <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="Logo"></a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
+
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 
                 <div class="navbar-nav ">
                     <a class="nav-link " href="#"> <i class="fa-solid fa-magnifying-glass "></i>
 
                     </a>
+                    <!--Notification-->
                     <a class="nav-link" href="#"> <i class="fa-solid fa-heart"></i></a>
-                    <a class="nav-link position-relative" href="#"><i class="fa-solid fa-bell"></i>
+                    <a class="nav-link position-relative btn" data-bs-toggle="offcanvas" href="#offcanvasNotification"
+                        role="button" aria-controls="offcanvasNotification"><i class="fa-solid fa-bell"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             3
                             <span class="visually-hidden">unread messages</span>
                         </span>
                     </a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNotification"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header text-center">
+                            <h5 class="offcanvas-title mx-auto" id="offcanvasExampleLabel" style="width: 100%;">
+                                <b>الإشعارات </b>
+                            </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body " style="background-color: white;">
+                            <h6 class="priceRange text-center pb-3" style="border-bottom:2px solid black ; ">
+                                <b>العروض</b>
+                                <br>
+                            </h6>
+                            <div class="offers my-auto">
+                                <i class="fa-solid fa-gift"></i>
+                                <div>
+                                    <p class="emptyNotification">
+                                        صندوق العروض فارغ
+                                    </p>
+                                    <p>
+                                        لا توجد عروض جديدة
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Notification-->
 
                     <!--Cart-->
                     <a class="nav-link position-relative btn " data-bs-toggle="offcanvas" href="#offcanvasExample"
@@ -126,237 +157,246 @@
     </nav>
     <nav class="navbar">
         <div class="container">
-            <div class="row">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                    <!--Mega Menu-->
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div class="row px-2 px-md-0">
+                <div class="col-2">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!--Mega Menu-->
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 
-                        <li><a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
-                                        class="fa-solid fa-chevron-left"></i></a>
-                            <ul class="dropdown-menu dropdown-submenu">
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
-                                    </ul>
-                                </li>
-
-
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
-                                            class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="category.html"> العطور<span class="float-end"><i
-                                        class="fa-solid fa-chevron-left"></i></a>
-                            <ul class="dropdown-menu dropdown-submenu">
-
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
-                                            class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="category.html">العناية<span class="float-end"><i
-                                        class="fa-solid fa-chevron-left"></i></a>
-                            <ul class="dropdown-menu dropdown-submenu">
-
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> العطور <span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> الأجهزة <span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
-                                            class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="category.html"> الهدايا<span class="float-end"><i
-                                        class="fa-solid fa-chevron-left"></i></a>
-                            <ul class="dropdown-menu dropdown-submenu">
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
-                                            class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="category.html"> الأظافر<span class="float-end"><i
-                                        class="fa-solid fa-chevron-left"></i></a>
-                            <ul class="dropdown-menu dropdown-submenu">
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> العطور <span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> الأجهزة <span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
-                                            class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="category.html"> الأجهزة<span class="float-end"><i
-                                        class="fa-solid fa-chevron-left"></i></a>
-                            <ul class="dropdown-menu dropdown-submenu">
-
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> الأجهزة <span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
-                                            class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="category.html"> الأم و الطفل<span class="float-end"><i
-                                        class="fa-solid fa-chevron-left"></i></a>
-                            <ul class="dropdown-menu dropdown-submenu">
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
-                                    </ul>
-                                </li>
+                            <li><a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
+                                            class="fa-solid fa-chevron-left"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
+                                                    class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
+                                        </ul>
+                                    </li>
 
 
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="category.html"> أدوات اللياقة <span class="float-end"><i
-                                        class="fa-solid fa-chevron-left"></i></a>
-                            <ul class="dropdown-menu dropdown-submenu">
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> العطور <span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> الأجهزة <span class="float-end"><i
-                                                class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
+                                        </ul>
+                                    </li>
 
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
-                                            class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li><a class="dropdown-item" href="category.html"> العطور</a></li>
-                                        <li><a class="dropdown-item" href="category.html"> العناية </a></li>
-                                        <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
-                                    </ul>
-                                </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="category.html"> العطور<span class="float-end"><i
+                                            class="fa-solid fa-chevron-left"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
 
-                            </ul>
-                        </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="category.html">العناية<span class="float-end"><i
+                                            class="fa-solid fa-chevron-left"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> العطور <span class="float-end"><i
+                                                    class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> الأجهزة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="category.html"> الهدايا<span class="float-end"><i
+                                            class="fa-solid fa-chevron-left"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
+                                                    class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="category.html"> الأظافر<span class="float-end"><i
+                                            class="fa-solid fa-chevron-left"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
+                                                    class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> العطور <span class="float-end"><i
+                                                    class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> الأجهزة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="category.html"> الأجهزة<span class="float-end"><i
+                                            class="fa-solid fa-chevron-left"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> الأجهزة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="category.html"> الأم و الطفل<span class="float-end"><i
+                                            class="fa-solid fa-chevron-left"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
+                                                    class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
+                                        </ul>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="category.html"> أدوات اللياقة <span class="float-end"><i
+                                            class="fa-solid fa-chevron-left"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> المكياج<span class="float-end"><i
+                                                    class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> المكياج </a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> العطور <span class="float-end"><i
+                                                    class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> المكياج</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> الأجهزة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="category.html"> أدوات اللياقة <span
+                                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li><a class="dropdown-item" href="category.html"> العطور</a></li>
+                                            <li><a class="dropdown-item" href="category.html"> العناية </a></li>
+                                            <li><a class="dropdown-item" href="category.html"> الهدايا</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--End Mega Menu-->
+                    </div>
+                </div>
+                <div class="col-10 NavParts">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item withBorder"><a href="category.html"> جميع الأقسام </a></li>
+                        <li class="list-group-item withBorder"><a href="category.html">الماركات<a></li>
+                        <li class="list-group-item"><a href="category.html">العروض</a></li>
                     </ul>
-                    <!--End Mega Menu-->
                 </div>
             </div>
         </div>
