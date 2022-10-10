@@ -24,7 +24,7 @@ Navbar
 nav.navbar {
     position: relative;
     text-align: center;
-    background: linear-gradient(90deg, #F49996 0%, #EC4D49 25%, #9E2261 100%);
+    background: linear-gradient(95deg, #fc6c69 0%, #EC4D49 15%, #9E2261 100%);
     direction: rtl;
 
 }
@@ -47,7 +47,6 @@ nav.navbar .navbar-nav a.nav-link, nav.navbar  .dropdown button {
     margin-left: 30px;
     background-color: white;
     border-radius: 50%;
-    padding: 10px;
     width: 40px;
     height: 40px;
 }
@@ -64,7 +63,7 @@ nav.navbar .navbar-nav a.nav-link .badge {
 }
 
 nav.navbar form {
-    width: 35%;
+    width: 50%;
     margin-left: 20px;
 }
 
@@ -152,7 +151,7 @@ nav.navbar .dropdown {
 }
 
 nav.navbar .dropdown-menu {
-    position: relative;
+    position: absolute;
     min-height: 300px;
     top: unset;
 }
@@ -276,11 +275,14 @@ section.RoundedImageCarousel {
 }
 
 
-
+section.RoundedImageCarousel .carousel .carousel-inner .row{
+    background-color: white !important;
+}
 section.RoundedImageCarousel .carousel .carousel-inner .card {
     border: none;
     text-align: center;
     padding: 10px 0px;
+    margin: 0 15px;
 }
 section.RoundedImageCarousel .carousel .carousel-inner .card a{
     text-decoration: none;
