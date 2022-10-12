@@ -428,7 +428,10 @@ ProductCarouse
     padding: 0px 5px;
     position: relative;
 }
-
+section.category .categoryProduct .row{
+    align-content: center;
+    justify-content: space-between;
+}
 .ProductCarouse .carousel .carousel-inner .carousel-item .card img, section.category .categoryProduct .card img {
     padding: 10px;
 }
