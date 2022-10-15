@@ -30,7 +30,8 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="list-group One">
-                        <li class="list-group-item"><i class="fa-solid fa-house me-3"></i> الرئيسية </li>
+                        <li class="list-group-item"><a href="index.html"><i class="fa-solid fa-house me-3"></i> الرئيسية
+                            </a></li>
                     </ul>
                     <ul class="list-group Two">
                         <li class="list-group-item"> <i class="fa-solid fa-mortar-pestle me-3"></i> الميكياج <span
@@ -56,14 +57,17 @@
 
                     </ul>
                     <ul class="list-group Three">
-                        <li class="list-group-item"><i class="fa-solid fa-mortar-pestle me-3"></i> الماركات <span
-                                class="float-end"><i class="fa-solid fa-chevron-left"></i> </span></li>
+                        <li class="list-group-item"><a href="Brand.html"><i class="fa-solid fa-mortar-pestle me-3"></i>
+                                الماركات <span class="float-end"><i class="fa-solid fa-chevron-left"></i> </span></a>
+                        </li>
                         <li class="list-group-item"><i class="fa-solid fa-mortar-pestle me-3"></i> الدولة واللغة <span
                                 class="float-end"><i class="fa-solid fa-chevron-left"></i> </span></li>
                         <li class="list-group-item"><i class="fa-solid fa-mortar-pestle me-3"></i> خدمة العملاء<span
                                 class="float-end"><i class="fa-solid fa-chevron-left"></i> </span></li>
-                        <li class="list-group-item"> <i class="fa-solid fa-mortar-pestle me-3"></i>سياسة الإستبدال
-                            والإسترجاع<span class="float-end"><i class="fa-solid fa-chevron-left"></i> </span></li>
+                        <li class="list-group-item"><a href="refund.html"> <i
+                                    class="fa-solid fa-mortar-pestle me-3"></i>سياسة الإستبدال
+                                والإسترجاع<span class="float-end"><i class="fa-solid fa-chevron-left"></i> </span></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -4463,7 +4467,7 @@
             <div class="blueLine">
                 <h3 class="mb-0">ليش تختارنا؟</h3>
             </div>
-            <div class="FooterCards mx-auto mt-5">
+            <div class="FooterCards mx-auto mt-5 d-md-block d-none">
                 <div class="card-group">
                     <div class="card">
                         <img src="images/Footer card 1.png" alt="">
@@ -4476,69 +4480,105 @@
                     </div>
                 </div>
             </div>
+            <div class="FooterCards mx-auto mt-5 d-md-none d-block">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Footer card 1.png" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Footer card 2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Footer card 3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="youNeedHelp text-center">
-            <div class="blueLine py-3">
+            <div class="blueLine py-md-3 py-2">
                 <h5 class="mb-0">هل تحتاج المساعدة؟</h5>
             </div>
             <div class="FooterServices pt-3 pb-2">
                 <div class="container-fluid">
                     <div class="card-group mt-5">
-                        <div class="card">
-                            <a href="#">
-                                <div class="FooterServicesImage">
+                        <div class="row">
+                            <div class="col-md-1 col-0"></div>
+                            <div class="col-md-2 col-6">
+                                <div class="card">
+                                    <a href="#">
+                                        <div class="FooterServicesImage">
 
-                                    <img src="images/howToOrder.png" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
+                                            <img src="images/howToOrder.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
 
-                                    <h5 class="card-title">كيفية الطلب</h5>
+                                            <h6 class="card-title">كيفية الطلب</h6>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <div class="FooterServicesImage">
-                                <a href="#">
-                                    <img src="images/Delivery.png" class="card-img-top" alt="...">
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">التوصيل و الشحن</h5>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="#">
-                                <div class="FooterServicesImage ">
-                                    <div class="FooterServicesImage">
+                            <div class="col-md-2  col-6">
 
-                                        <img src="images/Exchange.png" class="card-img-top" alt="...">
-                                    </div>
+                                <div class="card">
+                                    <a href="#">
+                                        <div class="FooterServicesImage">
+
+                                            <img src="images/Delivery.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title">التوصيل و الشحن</h6>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">الإستبدال والإسترجاع</h5>
+                            </div>
+                            <div class="col-md-2  col-6">
+                                <div class="card">
+                                    <a href="#">
+                                        <div class="FooterServicesImage ">
+                                            <div class="FooterServicesImage">
+
+                                                <img src="images/Exchange.png" class="card-img-top" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title">الإستبدال والإسترجاع</h6>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="col-md-2  col-6">
+                                <div class="card">
+                                    <a href="#">
+                                        <div class="FooterServicesImage">
+                                            <img src="images/email.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title">البريد الألكتروني</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-3 d-md-none d-block"></div>
+                            <div class="col-md-2  col-6">
+                                <div class="card">
+                                    <a href="#">
+                                        <div class="FooterServicesImage">
+                                            <img src="images/phone.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title">الإتصال </h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-3  d-md-none d-block"></div>
+
+                            <div class="col-md-1  d-md-block d-none"></div>
+
                         </div>
-                        <div class="card">
-                            <a href="#">
-                                <div class="FooterServicesImage">
-                                    <img src="images/email.png" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">البريد الألكتروني</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="#">
-                                <div class="FooterServicesImage">
-                                    <img src="images/phone.png" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">الإتصال </h5>
-                                </div>
-                            </a>
-                        </div>
+
                     </div>
                 </div>
             </div>
