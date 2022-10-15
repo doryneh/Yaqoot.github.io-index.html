@@ -624,6 +624,7 @@ section.productDetails .carousel .carousel-indicators button {
     width: 50px;
     height: 50px;
     position: relative;
+    padding: 0;
 }
 
 section.productDetails .carousel .carousel-indicators button.like {
@@ -1237,5 +1238,10 @@ Media
 
     footer.footer .SocialMediaIcons li.nav-item {
         margin-left: 20px;
+    }
+    .NoAnim{
+        transform: translateX(0px) !important;
+        opacity: 1;
+        transition: none;
     }
 }
