@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
 @font-face {
     font-family: Almarai;
     src: url(../fonts/Almarai/Almarai-Regular.ttf);
@@ -38,7 +40,7 @@ nav.navbar .navbar-brand {
 nav.navbar .navbar-brand img {
     width: 100%;
 }
-nav.navbar .offcanvas-start{
+nav.navbar .offcanvas-start ,.offcanvas-start#filter2 ,.offcanvas-start#filter1{
     width: 100% !important;
     background-color: white !important;
 }
@@ -294,6 +296,7 @@ End Offer Carousel
 Pink seperator
 *********************
 *********************/
+
 .PinkSeperator .PinkLine {
     border: 1px solid #F29BB2;
     height: 1px;
@@ -782,7 +785,40 @@ Filter Accordion
     margin-bottom: 20px;
     padding-right: 15px !important;
 }
+.category .filter  button.btn.d-md-none.d-inline-block{
+    box-shadow: none;
+}
+#filter1 li.list-group-item,#filter2 li.list-group-item ,#filter2 .nav-pills .nav-link{
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: right;
+    color: black;
+}
+#filter2 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: transparent;
+    border: 2px solid #e2e2e2;
+    box-shadow: none;
+    border-left: 3px solid black;
+    color: black;
+    font-weight: bold;
+}
 
+
+#filter2 li.list-group-item {
+    padding: normal 0;
+}
+#filter1 li.list-group-item .form-check-input{
+    border-radius: 50%;
+ 
+}
+h5#filter1label,h5#filter2label{
+    font-weight: bold;
+}
+.offcanvas-header{
+    border-bottom: 2px solid #e2e2e2;
+}
 /*********************
 *********************
 End Filter Accordion 
@@ -843,6 +879,28 @@ End categoryProduct
 *********************
 *********************/
 
+/*********************
+*********************
+Brand 
+*********************
+*********************/
+.brandBody .breadcrumb .breadcrumb-item a,.brandBody .breadcrumb-item+.breadcrumb-item::before{
+    font-size: 20px ;
+    line-height: 50px ;
+}
+.brandBody .breadcrumb {
+    align-content: center;
+    justify-content: center;
+}
+.brandBody section.category .categoryProduct .card{
+    width:25%;
+}
+
+/*********************
+*********************
+End Brand 
+*********************
+*********************/
 
 /*********************
 *********************
@@ -850,95 +908,108 @@ Footer
 *********************
 *********************/
 
-footer .top-footer {
-    background-color: #171717;
-    padding: 75px 0;
-}
-
-footer .top-footer h3 {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #c43525;
-    line-height: 45px;
+footer.footer .whyUs , footer.footer .youNeedHelp{
+    background-color: #F9D9DC;
     position: relative;
 }
-
-footer .top-footer h3::before {
-    content: '';
+footer.footer .blueLine{
+    background-color: #1E224F;
+    color: white;
+    font-weight: bold;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding:  5px;
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 35px;
-    height: 2px;
-    background-color: #5c5c5c;
+    left: 50%;
+    top: -5%;
+    transform: translateX(-50%);
 }
-
-footer .top-footer p {
-    font-size: 15px;
-    color: #919191;
-    line-height: 22px;
-    margin-bottom: 50px;
+footer.footer .FooterCards {
+    width: 50%;
 }
-
-footer .top-footer ul {
-    padding: 0;
+footer.footer .FooterCards .card{
+    border: none;
+    padding: 10px;
+    width: 50%;
 }
-
-footer .top-footer ul.social li {
-    width: 50px;
-    height: 50px;
+footer.footer .FooterCards .card img{
+    width: 100%;
+}
+footer.footer .FooterServices .card-group .card{
+    background-color: transparent;
+    border: none;
+}
+footer.footer .FooterServices .card-group .card a{
+    text-decoration: none;
+    color: #000000;
+}
+footer.footer .FooterServices .card-group .card img{
+    width: 50%;
+}
+footer.footer .FooterServices .card-group .card .card-body h5{
+    font-weight: 800;
+}
+footer.footer .SocialMediaIcons{
+    background-image: url(../images/bg.webp);
+    background-size: cover;
+    background-position: center center
+}
+footer.footer .SocialMediaIcons li.nav-item {
+    width: 70px;
+    height: 70px;
+    background-color: #A01E68;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+footer.footer .SocialMediaIcons li.nav-item a{
+    font-size: 35px;
+    color: white;
     text-align: center;
-    line-height: 35px;
-    border-radius: 2px;
-    background-color: #333333;
-    margin-right: 5px;
-    transition: all .5s ease;
-    position: relative;
+    border-radius: 50%;
 }
-
-footer .top-footer ul.social li a {
-    color: #ffffff;
-    position: absolute;
-    top: 20%;
-    left: 20%;
+footer.footer .SocialMediaIcons li.nav-item:hover,footer.footer .SocialMediaIcons li.nav-item:hover a{
+    color: rgb(180, 180, 180);
+    background-color: #681544;
 }
-
-footer .top-footer ul.contact-us li {
-    margin-bottom: 35px;
-    font-size: 18px;
-    color: #676767;
-}
-
-footer .top-footer ul.contact-us li:last-of-type {
-    margin-bottom: 0px;
-}
-
-footer .top-footer ul.contact-us li .icons {
-    width: 35px;
-    height: 35px;
+footer.footer  .copyRight{
+    background: linear-gradient(95deg, #fc6c69 0%, #EC4D49 15%, #9E2261 100%);
     text-align: center;
-    background-color: #282828;
-    display: inline-block;
-    line-height: 35px;
-    border-radius: 2px;
-    color: #ffffff;
-    margin-left: 20px;
-}
-
-footer .copyright {
-    background-color: #111111;
-}
-
-footer .copyright p {
-    line-height: 78px;
-    font-size: 15px;
-    color: #919191;
-    margin-bottom: 0;
+    color: white;
+    font-weight: 15px;
+    padding: 10px;
 }
 
 /*********************
 *********************
 End Footer
+*********************
+*********************/
+
+/*********************
+*********************
+Animation
+*********************
+*********************/
+.PinkSeperator,.RoundedImageCarousel,.Cards3Part,.ProductCarouse,.whyUs,.youNeedHelp{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+transition: 0.5s all ease;
+}
+.PinkSeperator.active,.RoundedImageCarousel.active,.Cards3Part.active,.ProductCarouse.active,.whyUs.active,.youNeedHelp.active,.FooterCards.active,.FooterServices.active{
+transform: translateX(0);
+opacity: 1;
+}
+.FooterCards,.FooterServices{
+position: relative;
+transform: translateX(150px);
+opacity: 0;
+transition: 1.5s all ease;
+}  
+/*********************
+*********************
+End ANimation
 *********************
 *********************/
 
@@ -1060,7 +1131,7 @@ Media
         width: unset;
     }
     section.category .categoryProduct .card{
-        width: 50%;
+        width: 50% !important;
         padding: 0 5px;
     }
     section.category .categoryProduct .card h5.card-title,.ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span, section.category .categoryProduct .card h5.card-title span{
