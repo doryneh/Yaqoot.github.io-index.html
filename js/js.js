@@ -1,14 +1,18 @@
 $(document).ready(function () {
 
-    function registerClickHandler() {
+    function removeCard() {
         // Implement the click handler here for button of class 'remove'
         $('.trash').click(function() {
           $(this).parent().parent().parent().parent().remove();
         });
       }
       
-      registerClickHandler();
-    
+      removeCard();
+
+      $(".SearchBtn").click(function(){
+        $(".hiddenSearch").toggle();
+      });
+     
     
       function PinkSeperatorAnim() {
         var reveals = document.querySelectorAll(".PinkSeperator, .RoundedImageCarousel ,.Cards3Part,.ProductCarouse,.whyUs,.youNeedHelp,.FooterCards,.FooterServices");

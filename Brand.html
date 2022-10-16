@@ -12,8 +12,8 @@
 </head>
 
 <body class=" brandBody">
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex pt-3">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex pt-3">
         <div class="container ">
 
             <button class="btn btn-primary d-md-none d-block SideBar" type="button" data-bs-toggle="offcanvas"
@@ -79,11 +79,11 @@
 
 
             <div class="navbar-nav  ">
-                <a class="nav-link  " href="#">
+                <a class="nav-link SearchBtn" href="#">
                     <i class="fa-solid fa-magnifying-glass "></i>
                 </a>
                 <!--Notification-->
-                <a class="nav-link d-md-block d-none" href="#"> <i class="fa-solid fa-heart"></i></a>
+                <a class="nav-link " href="#"> <i class="fa-solid fa-heart"></i></a>
                 <a class="nav-link position-relative btn" data-bs-toggle="offcanvas" href="#offcanvasNotification"
                     role="button" aria-controls="offcanvasNotification"><i class="fa-solid fa-bell"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -128,7 +128,7 @@
                         <span class="visually-hidden"> Number of Items in cart</span>
                     </span>
                 </a>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                <div class="offcanvas offcanvas-end  " tabindex="-1" id="offcanvasExample"
                     aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header text-center">
                         <h5 class="offcanvas-title mx-auto" id="offcanvasExampleLabel" style="width: 100%;">
@@ -137,7 +137,7 @@
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body cart-body">
                         <p class="priceRange">
                             هل ترغب بشحن مجاني؟ أضف 335.94 ريال إلى سلتك
                             <br>
@@ -196,13 +196,148 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card mb-3 CartItem" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-3 my-auto">
+                                    <img src="./images/rounded Image Carousel/1.png" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <p class="card-title">essence <button class="btn trash float-end"><i
+                                                    class="fa-solid fa-trash"></i></button>
+                                            <br>
+                                        <p class="card-title-span">
+                                            ماسكرا اي لوف اكستريم كريزي فوليوم من ايسنس
+
+                                        </p>
+                                        </p>
+                                        <div class="card CardPrice mb-1">
+                                            <div class="row g-0">
+                                                <div class="col-5 Price">
+                                                    <p class="before"><s> 120 ريال </s></p>
+                                                    <p class="after">90 ريال </p>
+
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card-body ">
+                                                        <div class="input-group">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-default btn-number"
+                                                                    data-type="minus" data-field="quant[1]">
+                                                                    <i class="fa-solid fa-minus"></i>
+                                                                </button>
+                                                            </span>
+                                                            <input type="text" name="quant[1]"
+                                                                class="form-control input-number" value="8" min="0"
+                                                                max="99">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-default btn-number"
+                                                                    data-type="plus" data-field="quant[1]">
+                                                                    <i class="fa-solid fa-plus"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+                        <div class=" cart-btn ">
+                            <p>
+                                <b>الإجمالي : 2 منتجات - 18.60 ريال</b>
+                            </p>
+                            <button class="btn btn-dark p-3" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#CompleteOrder" aria-controls="CompleteOrder">
+                                إتمام الطلب
+                            </button>
+
+
+                        </div>
                     </div>
                 </div>
                 <!--End Cart-->
             </div>
         </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="CompleteOrder" aria-labelledby="CompleteOrderLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="CompleteOrderLabel">أهلا بك</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body cart-body">
+                <div class="text-start mb-3">
+                    أنشئ حسابًا لتتمكن من التسوق بشكل أسرع والوصول لطلباتك والمفضلة وغيرها
+                </div>
+                <div class="form-group mb-5">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="الإسم الأول والأخير" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
 
+                    <div class="input-group ">
+                        <input type="radio" class="btn-check w-50" name="options-outlined" id="success-outlined"
+                            autocomplete="off" checked>
+                        <label class="btn btn-outline-dark" for="success-outlined">ذكر</label>
+
+                        <input type="radio" class="btn-check w-50" name="options-outlined" id="danger-outlined"
+                            autocomplete="off">
+                        <label class="btn btn-outline-dark" for="danger-outlined"> أنثى</label>
+                    </div>
+
+                    <div class="input-group ">
+                        <input type="email" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                            placeholder=" إيميل">
+                    </div>
+                    <div class="input-group ">
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>حدد المحافظة</option>
+                        <option value="1">صنعاء</option>
+                        <option value="2">عدن</option>
+                      </select>
+                    </div>
+
+                    <div class="input-group ">
+                        <input type="number" class="form-control" aria-label="" placeholder="رقم الهاتف">
+                    </div>
+
+                    <div class="input-group ">
+                        <input type="password" class="form-control" placeholder="كلمة المرور" aria-label="password">
+                    </div>
+
+                    <div class="input-group">
+                        بتسجيلك، انت توافق على
+                        <a href="policy.html">
+                            الشروط والأحكام
+                        </a>
+                    </div>
+                </div>
+                <div class=" cart-btn ">
+
+                    <p class="mb-3 float-start"> <i class="fa-solid fa-right-from-bracket me-4"></i>تسجيل دخول بالبريد الإلكتروني
+                    </p>
+                    <br>
+                    <p class="mb-5 float-start"> <i class="fa-solid fa-phone me-4"></i>تسجيل دخول بالبريد الإلكتروني </p>
+
+
+                    <button class="btn btn-dark p-3" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#CompleteOrder" aria-controls="CompleteOrder">
+                        تسجيل جديد
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
     </nav>
+    <input type="search" placeholder="إبحث" class="m-0 w-100 px-3 py-2 hiddenSearch d-md-none" >
     <nav class="navbar d-md-block d-none">
         <div class="container">
             <div class="row px-2 px-md-0">
