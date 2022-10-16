@@ -1278,6 +1278,9 @@ Media
         opacity: 1;
         transition: none;
     }
+    .nav-link{
+        margin-top:5px ;
+    }
 }
 @media (max-width: 575px) {
     .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
