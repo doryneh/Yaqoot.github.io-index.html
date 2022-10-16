@@ -997,6 +997,7 @@ footer.footer .FooterCards .card {
     border: none;
     padding: 10px;
     width: 50%;
+    background-color: transparent;
 }
 
 footer.footer .FooterCards .card img {
