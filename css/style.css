@@ -1126,13 +1126,12 @@ Media
 
     }
 
-    nav.navbar .navbar-nav a.nav-link {
-        margin-left: 20px;
-    }
+   
 
 
     nav.navbar .navbar-nav a.nav-link {
         margin-left: 10px;
+        padding-top: 8px;
     }
 
     section.OfferCarousel .carousel .carousel-control-prev, section.OfferCarousel .carousel .carousel-control-next {
@@ -1282,7 +1281,7 @@ Media
         transition: none;
     }
     .nav-link,nav.navbar button.SideBar svg ,section.productDetails .carousel .carousel-indicators button.like svg, section.productDetails .carousel .carousel-indicators button.share svg{
-        margin-top:8px !important ;
+        padding-top:8px !important ;
     }
 }
 @media (max-width: 575px) {
