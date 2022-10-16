@@ -1131,7 +1131,7 @@ Media
 
     nav.navbar .navbar-nav a.nav-link {
         margin-left: 10px;
-        padding-top: 8px;
+        padding-top: 10px !important;
     }
 
     section.OfferCarousel .carousel .carousel-control-prev, section.OfferCarousel .carousel .carousel-control-next {
@@ -1280,8 +1280,8 @@ Media
         opacity: 1;
         transition: none;
     }
-    .nav-link,nav.navbar button.SideBar svg ,section.productDetails .carousel .carousel-indicators button.like svg, section.productDetails .carousel .carousel-indicators button.share svg{
-        padding-top:8px !important ;
+    .nav-link,nav.navbar button.SideBar ,section.productDetails .carousel .carousel-indicators button.like , section.productDetails .carousel .carousel-indicators button.share{
+        padding-top:10px !important ;
     }
 }
 @media (max-width: 575px) {
