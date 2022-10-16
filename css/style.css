@@ -1144,10 +1144,12 @@ Media
 
     .PinkSeperator .PinkSectionTitle {
         font-size: 15px;
+        font-weight: bolder;
     }
 
     .PinkSeperator .ShowAll a {
         font-size: 10px;
+        font-weight: bolder;
     }
 
     section.RoundedImageCarousel .carousel .carousel-inner .card {
@@ -1268,6 +1270,7 @@ Media
     footer.footer .blueLine {
         width: 60%;
         top: -2%;
+        padding: 10px 5px;
     }
 
     footer.footer .SocialMediaIcons li.nav-item {
@@ -1278,7 +1281,7 @@ Media
         opacity: 1;
         transition: none;
     }
-    .nav-link{
+    .nav-link,nav.navbar button.SideBar svg ,section.productDetails .carousel .carousel-indicators button.like svg, section.productDetails .carousel .carousel-indicators button.share svg{
         margin-top:8px !important ;
     }
 }
