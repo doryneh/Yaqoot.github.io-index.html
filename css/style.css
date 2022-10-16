@@ -293,6 +293,7 @@ nav.navbar .NavParts .list-group .list-group-item a:hover {
     border:1px solid rgb(61, 61, 61);
     box-shadow: 3px 6px 5px grey;
     background-color: #d6d6d6;
+    border-radius: 0;
 }
 
 
