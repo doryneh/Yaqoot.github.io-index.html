@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 
 @font-face {
-    font-family: Almarai;
-    src: url(../fonts/Almarai/Almarai-Regular.ttf);
+    font-family: Tajawal;
+    src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
 }
 
 body, body.categoryBody {
     direction: rtl;
-    font-family: Almarai !important;
+    font-family: Tajawal !important;
     background-color: #f1f1f1 !important;
 }
 
@@ -177,7 +177,7 @@ nav.navbar .cart-body  .input-group > .form-control ,nav.navbar .cart-body  .inp
     font-size: 13px;
     padding: 10px;
     text-align: right;
-    border: 1px solid blac;
+    direction: rtl;
 }
 nav.navbar .cart-body  label.btn.btn-outline-dark {
     width: 50%;
@@ -290,9 +290,9 @@ nav.navbar .NavParts .list-group .list-group-item a:hover {
     display: none;
     transition: 0.5s ease all;
     border: none;
-    border:1px solid rgb(61, 61, 61);
+    border:2px solid rgb(0, 0, 0);
     box-shadow: 3px 6px 5px grey;
-    background-color: #d6d6d6;
+    background-color: #f1f1f1;
     border-radius: 0;
 }
 
