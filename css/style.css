@@ -1269,7 +1269,7 @@ Media
     footer.footer .blueLine {
         width: 60%;
         top: -2%;
-        padding: 10px 5px 5px 5px;
+        padding: 10px 5px 0px 5px !important;
 
     }
 
@@ -1285,7 +1285,7 @@ Media
         padding-top:10px !important ;
     }
     .nav-link{
-        padding-top: 15px;
+        margin-top: 8px;
     }
 }
 @media (max-width: 575px) {
