@@ -511,10 +511,10 @@ section.category .categoryProduct .card {
 }
 
 .ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title, section.category .categoryProduct .card h5.card-title {
-    font-weight: 600;
     color: #5a5a5a;
     font-size: 13px;
-    line-height: 25px;
+    line-height: 17px;
+    margin-bottom: 2px !important;
 }
 
 .ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span, section.category .categoryProduct .card h5.card-title span {
@@ -526,8 +526,8 @@ section.category .categoryProduct .card {
 
 .ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .rating, section.category .categoryProduct .card .card-text .rating {
     color: rgb(232, 236, 0);
-    line-height: 25px;
-    margin-bottom: 10px;
+    line-height: 21px;
+    margin-bottom: 2px;
     font-size: 15px;
 
 }
@@ -553,6 +553,7 @@ section.category .categoryProduct .card {
     color: #c43525;
     font-size: 14px;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .card.CardPrice .card-body {
@@ -898,11 +899,14 @@ categoryProduct
     box-shadow: none;
 }
 
-.category .categoryProduct button.AddToCart.btn {
+ button.AddToCart.btn {
     color: #8d008d;
-    font-weight: bold;
-    margin-bottom: 10px;
     text-align: center;
+    width: 100%;
+    line-height: 15px;
+    border-top: 1.5px solid #e3e3e3;
+    padding: 10px ;
+    font-size: 15px;
 }
 
 /*Pagination*/
