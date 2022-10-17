@@ -511,7 +511,7 @@ section.category .categoryProduct .card {
     text-decoration: none;
 }
 
-.ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title, section.category .categoryProduct .card h5.card-title ,section.category .categoryProduct .card h5.card-title, .ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span, section.category .categoryProduct .card h5.card-title span{
+.ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title, section.category .categoryProduct .card h5.card-title, section.category .categoryProduct .card h5.card-title, .ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span, section.category .categoryProduct .card h5.card-title span {
     color: #5a5a5a;
     font-size: 13px;
     line-height: 17px;
@@ -537,9 +537,11 @@ section.category .categoryProduct .card {
     font-size: 13px;
     color: #a7a7a7;
 }
+
 .card.CardPrice {
     width: 100% !important;
 }
+
 .card.CardPrice .Price p.before {
     text-decoration: line-through;
     color: #a7a7a7;
@@ -1260,7 +1262,7 @@ Media
     }
 
     section.category .categoryProduct .card .card-text .rating {
-        line-height: 20px;
+        line-height: 15px;
         font-size: 13px;
     }
 
@@ -1279,8 +1281,10 @@ Media
     .card.CardPrice .Price p.before {
         font-size: 9px;
     }
+
     section.category .categoryProduct .card.CardPrice {
         width: 100% !important;
+        margin-bottom: 5px !important;
     }
 
     section.category .categoryProduct .card a {
