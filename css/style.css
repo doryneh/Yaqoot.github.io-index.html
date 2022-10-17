@@ -1144,10 +1144,11 @@ Media
     .PinkSeperator .PinkSectionTitle {
         font-size: 15px;
         font-weight: bolder;
+        color: black;
     }
 
     .PinkSeperator .ShowAll a {
-        font-size: 10px;
+        font-size: 15px;
         font-weight: bolder;
     }
 
