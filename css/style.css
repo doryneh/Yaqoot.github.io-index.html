@@ -160,6 +160,7 @@ nav.navbar .offcanvas .card .card-body {
 
 nav.navbar .offcanvas .card .card-title {
     font-size: 11px;
+    margin-bottom: 0;
 }
 
 nav.navbar .offcanvas .card .card-title-span {
@@ -544,6 +545,10 @@ section.category .categoryProduct .card {
     margin-bottom: 0;
 }
 
+.card.CardPrice input.form-control {
+    height: 30px !important;
+}
+
 .card.CardPrice {
     border: none !important;
     width: 100% !important;
@@ -899,13 +904,13 @@ categoryProduct
     box-shadow: none;
 }
 
- button.AddToCart.btn {
+button.AddToCart.btn {
     color: #8d008d;
     text-align: center;
     width: 100%;
     line-height: 15px;
     border-top: 1.5px solid #e3e3e3;
-    padding: 10px ;
+    padding: 10px;
     font-size: 15px;
 }
 
@@ -1273,6 +1278,7 @@ Media
     .card.CardPrice .Price p.before {
         font-size: 9px;
     }
+
 
     section.category .categoryProduct .card a {
         border-bottom: 2px solid #80808029;
