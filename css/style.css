@@ -86,7 +86,8 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
     text-decoration: none;
     color: black;
 }
-.nav-link{
+
+.nav-link {
     text-align: center;
     justify-content: center !important;
 }
@@ -165,27 +166,33 @@ nav.navbar .offcanvas .card .card-title-span {
     font-size: 13px;
     margin-bottom: 0;
 }
+
 nav.navbar .cart-body {
     position: relative;
-    
+
 }
-nav.navbar .cart-body .cart-btn{
+
+nav.navbar .cart-body .cart-btn {
     position: absolute;
     bottom: 5%;
     width: 90%;
 }
-nav.navbar .cart-body .cart-btn button{
+
+nav.navbar .cart-body .cart-btn button {
     width: 90%;
 }
-nav.navbar .cart-body  .input-group > .form-control ,nav.navbar .cart-body  .input-group > select {
+
+nav.navbar .cart-body .input-group>.form-control, nav.navbar .cart-body .input-group>select {
     font-size: 13px;
     padding: 10px;
     text-align: right;
     direction: rtl;
 }
-nav.navbar .cart-body  label.btn.btn-outline-dark {
+
+nav.navbar .cart-body label.btn.btn-outline-dark {
     width: 50%;
 }
+
 /*end Cart*/
 
 /*Notification*/
@@ -290,11 +297,11 @@ nav.navbar .NavParts .list-group .list-group-item a:hover {
     color: antiquewhite;
 }
 
- .hiddenSearch{
+.hiddenSearch {
     display: none;
     transition: 0.5s ease all;
     border: none;
-    border:2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     box-shadow: 3px 6px 5px grey;
     background-color: #f1f1f1;
     border-radius: 0;
@@ -994,7 +1001,7 @@ footer.footer .FooterCards {
 
 footer.footer .carousel-item {
     padding: 10px;
-    background-color:transparent;
+    background-color: transparent;
 }
 
 footer.footer .FooterCards .card {
@@ -1126,7 +1133,7 @@ Media
 
     }
 
-   
+
 
 
     nav.navbar .navbar-nav a.nav-link {
@@ -1277,23 +1284,28 @@ Media
     footer.footer .SocialMediaIcons li.nav-item {
         margin-left: 20px;
     }
-    .NoAnim{
+
+    .NoAnim {
         transform: translateX(0px) !important;
         opacity: 1;
         transition: none;
     }
-    nav.navbar button.SideBar ,section.productDetails .carousel .carousel-indicators button.like , section.productDetails .carousel .carousel-indicators button.share{
-        padding-top:10px !important ;
+
+    nav.navbar button.SideBar, section.productDetails .carousel .carousel-indicators button.like, section.productDetails .carousel .carousel-indicators button.share {
+        padding-top: 10px !important;
     }
-    .nav-link{
+
+    .nav-link {
         margin-top: 10px !important;
     }
 }
+
 @media (max-width: 575px) {
-    .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-sm, .navbar>.container-md, .navbar>.container-lg, .navbar>.container-xl, .navbar>.container-xxl {
         flex-wrap: nowrap !important;
     }
-    .hiddenSearch{
-    transition: 1s ease all !important;
+
+    .hiddenSearch {
+        transition: 1s ease all !important;
     }
 }
