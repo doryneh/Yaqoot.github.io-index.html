@@ -525,6 +525,7 @@ section.category .categoryProduct .card {
 
 }
 
+
 .ProductCarouse .carousel .carousel-inner .carousel-item .card .card-text .rating, section.category .categoryProduct .card .card-text .rating {
     color: rgb(232, 236, 0);
     line-height: 21px;
@@ -1244,21 +1245,29 @@ Media
     }
 
     .category .categoryProduct h3 {
-        font-size: 20px;
-
+        font-size: 13px;
+        margin-bottom: 20px;
     }
-
+    .category .categoryProduct h3  button.btn.d-md-none.d-inline-block {
+        font-size: 13px;
+        padding: 0 10px;
+    }
     .category .categoryProduct h3 span .form-select {
         width: unset;
     }
+    
 
     section.category .categoryProduct .card {
         width: 50% !important;
         padding: 0 5px;
     }
 
-    section.category .categoryProduct .card h5.card-title, .ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span, section.category .categoryProduct .card h5.card-title span {
+    .ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span, section.category .categoryProduct .card h5.card-title span {
         font-size: 11px;
+    }
+    section.category .categoryProduct .card h5.card-title {
+        font-size: 13px;
+        margin-bottom: 10px;
     }
 
     section.category .categoryProduct .card .card-text .rating {
@@ -1271,7 +1280,7 @@ Media
     }
 
     .category .categoryProduct button.AddToCart.btn {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .card.CardPrice .Price p.after {
