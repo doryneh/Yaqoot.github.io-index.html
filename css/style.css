@@ -579,6 +579,7 @@ section.category .categoryProduct .card {
     font-size: 13px;
     font-weight: bold;
     padding: 5px;
+    line-height: 15px;
 }
 
 /*********************
@@ -735,7 +736,7 @@ section.productDetails .addToCart {
     width: 100%;
     font-weight: bold;
     margin: 15px 0;
-
+    line-height: 15px;
 }
 
 section.productDetails .deepDetails .card {
@@ -1281,6 +1282,7 @@ Media
 
     .category .categoryProduct button.AddToCart.btn {
         font-size: 13px;
+        line-height: 15px;
     }
 
     .card.CardPrice .Price p.after {
