@@ -976,9 +976,21 @@ Brand
 }
 
 .brandBody section.category .categoryProduct .card {
-    width: 25%;
+    width: 23%;
+    box-shadow: 0px 5px 10px rgb(156, 156, 156);
+    transition: 0.5s ease all;
 }
-
+.brandBody section.category .categoryProduct .card:hover {
+    width: 23%;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+.brandBody section.category .categoryProduct .card  .card-body .card-title{
+    font-weight: bold;
+}
+.brandBody section.category .categoryProduct .card:hover  .card-body .card-title span{
+    font-weight: bolder;
+    color: #c43525;
+}
 /*********************
 *********************
 End Brand 
