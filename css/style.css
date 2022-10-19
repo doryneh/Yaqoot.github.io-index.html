@@ -1352,4 +1352,10 @@ Media
     .hiddenSearch {
         transition: 1s ease all !important;
     }
+    .brandBody section.category .categoryProduct .card {
+        box-shadow: none;
+    }
+    .brandBody section.category .categoryProduct .card:hover {
+        box-shadow: none;
+    }
 }
