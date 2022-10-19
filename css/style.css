@@ -1353,9 +1353,9 @@ Media
         transition: 1s ease all !important;
     }
     .brandBody section.category .categoryProduct .card {
-        box-shadow: none;
+        box-shadow:0px 0px 0px ;
     }
     .brandBody section.category .categoryProduct .card:hover {
-        box-shadow: none;
+        box-shadow:0px 0px 0px ;
     }
 }
