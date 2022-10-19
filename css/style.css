@@ -1093,14 +1093,14 @@ End Footer
 Animation
 *********************
 *********************/
-.PinkSeperator, .RoundedImageCarousel, .Cards3Part, .ProductCarouse, .whyUs, .youNeedHelp {
+.PinkSeperator, .RoundedImageCarousel, .Cards3Part, .ProductCarouse, .whyUs, .youNeedHelp ,.AnimatedRow{
     position: relative;
     transform: translateX(150px);
     opacity: 0;
     transition: 0.5s all ease;
 }
 
-.PinkSeperator.active, .RoundedImageCarousel.active, .Cards3Part.active, .ProductCarouse.active, .whyUs.active, .youNeedHelp.active, .FooterCards.active, .FooterServices.active {
+.PinkSeperator.active, .RoundedImageCarousel.active, .Cards3Part.active, .ProductCarouse.active, .whyUs.active, .youNeedHelp.active, .FooterCards.active, .FooterServices.active,.AnimatedRow.active {
     transform: translateX(0);
     opacity: 1;
 }
@@ -1111,7 +1111,11 @@ Animation
     opacity: 0;
     transition: 1.5s all ease;
 }
-
+.NoBigAnim{
+    transform: translateX(0px) !important;
+    opacity: 1;
+    transition: none;
+}
 /*********************
 *********************
 End ANimation
