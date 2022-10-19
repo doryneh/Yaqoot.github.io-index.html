@@ -1352,10 +1352,5 @@ Media
     .hiddenSearch {
         transition: 1s ease all !important;
     }
-    .brandBody section.category .categoryProduct .card {
-        box-shadow: 0px 3px 7px rgb(156, 156, 156);
-    }
-    .brandBody section.category .categoryProduct .card:hover,.brandBody section.category .categoryProduct .card:focus,.brandBody section.category .categoryProduct .card:active {
-        box-shadow: 0px 3px 7px rgb(0, 0, 0);
-    }
+   
 }
