@@ -88,8 +88,11 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
 }
 
 .nav-link {
-    text-align: center;
-    justify-content: center !important;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 nav.navbar .navbar-nav a.nav-link, nav.navbar .dropdown button, nav.navbar button.SideBar {
@@ -1341,6 +1344,12 @@ Media
 
     .nav-link {
         margin-top: 10px !important;
+            display: unset;
+            align-content: unset;
+            flex-wrap: unset;
+            justify-content: unset;
+            align-items: unset;
+        
     }
 }
 
