@@ -88,11 +88,8 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
 }
 
 .nav-link {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    justify-content: center !important;
 }
 
 nav.navbar .navbar-nav a.nav-link, nav.navbar .dropdown button, nav.navbar button.SideBar {
