@@ -88,8 +88,11 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
 }
 
 .nav-link {
-    text-align: center;
-    justify-content: center !important;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 nav.navbar .navbar-nav a.nav-link, nav.navbar .dropdown button, nav.navbar button.SideBar {
@@ -1169,7 +1172,6 @@ Media
 
     nav.navbar .navbar-nav a.nav-link {
         margin-left: 10px;
-        padding-top: 10px !important;
     }
 
     section.OfferCarousel .carousel .carousel-control-prev, section.OfferCarousel .carousel .carousel-control-next {
@@ -1339,9 +1341,7 @@ Media
         padding-top: 10px !important;
     }
 
-    .nav-link {
-        margin-top: 10px !important;
-    }
+
 }
 
 @media (max-width: 575px) {
