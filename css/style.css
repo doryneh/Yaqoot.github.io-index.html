@@ -87,7 +87,7 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
     color: black;
 }
 
-.nav-link, section.productDetails .carousel .carousel-indicators button.like, section.productDetails .carousel .carousel-indicators button.share {
+.nav-link, nav.navbar .dropdown button ,section.productDetails .carousel .carousel-indicators button.like, section.productDetails .carousel .carousel-indicators button.share {
     display: flex !important;
     align-content: center;
     flex-wrap: wrap;
@@ -98,7 +98,7 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
     padding: 0 !important;
 }
 
-nav.navbar button.SideBar,nav.navbar button.dropdown {
+nav.navbar button.SideBar{
     align-content: center;
     flex-wrap: wrap;
     justify-content: center;
