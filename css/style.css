@@ -98,7 +98,7 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
     padding: 0 !important;
 }
 
-nav.navbar button.SideBar {
+nav.navbar button.SideBar,nav.navbar button.dropdown {
     align-content: center;
     flex-wrap: wrap;
     justify-content: center;
