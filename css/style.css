@@ -87,12 +87,24 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
     color: black;
 }
 
-.nav-link {
-    display: flex;
+.nav-link, section.productDetails .carousel .carousel-indicators button.like, section.productDetails .carousel .carousel-indicators button.share {
+    display: flex !important;
     align-content: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+}
+
+nav.navbar button.SideBar {
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 !important;
 }
 
 nav.navbar .navbar-nav a.nav-link, nav.navbar .dropdown button, nav.navbar button.SideBar {
@@ -676,8 +688,8 @@ section.productDetails .carousel .carousel-indicators {
 }
 
 section.productDetails .carousel .carousel-indicators button {
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
     position: relative;
     padding: 0;
 }
@@ -983,17 +995,21 @@ Brand
     box-shadow: 0px 5px 10px rgb(156, 156, 156);
     transition: 0.5s ease all;
 }
+
 .brandBody section.category .categoryProduct .card:hover {
     width: 23%;
     box-shadow: 0px 5px 10px rgb(0, 0, 0);
 }
-.brandBody section.category .categoryProduct .card  .card-body .card-title{
+
+.brandBody section.category .categoryProduct .card .card-body .card-title {
     font-weight: bold;
 }
-.brandBody section.category .categoryProduct .card:hover  .card-body .card-title span{
+
+.brandBody section.category .categoryProduct .card:hover .card-body .card-title span {
     font-weight: bolder;
     color: #c43525;
 }
+
 /*********************
 *********************
 End Brand 
@@ -1108,14 +1124,14 @@ End Footer
 Animation
 *********************
 *********************/
-.PinkSeperator, .RoundedImageCarousel, .Cards3Part, .ProductCarouse, .whyUs, .youNeedHelp ,.AnimatedRow{
+.PinkSeperator, .RoundedImageCarousel, .Cards3Part, .ProductCarouse, .whyUs, .youNeedHelp, .AnimatedRow {
     position: relative;
     transform: translateX(150px);
     opacity: 0;
     transition: 0.5s all ease;
 }
 
-.PinkSeperator.active, .RoundedImageCarousel.active, .Cards3Part.active, .ProductCarouse.active, .whyUs.active, .youNeedHelp.active, .FooterCards.active, .FooterServices.active,.AnimatedRow.active {
+.PinkSeperator.active, .RoundedImageCarousel.active, .Cards3Part.active, .ProductCarouse.active, .whyUs.active, .youNeedHelp.active, .FooterCards.active, .FooterServices.active, .AnimatedRow.active {
     transform: translateX(0);
     opacity: 1;
 }
@@ -1126,11 +1142,13 @@ Animation
     opacity: 0;
     transition: 1.5s all ease;
 }
-.NoBigAnim{
+
+.NoBigAnim {
     transform: translateX(0px) !important;
     opacity: 1;
     transition: none;
 }
+
 /*********************
 *********************
 End ANimation
@@ -1172,7 +1190,6 @@ Media
 
     nav.navbar .navbar-nav a.nav-link {
         margin-left: 10px;
-        padding-top: 10px !important;
     }
 
     section.OfferCarousel .carousel .carousel-control-prev, section.OfferCarousel .carousel .carousel-control-next {
@@ -1268,14 +1285,16 @@ Media
         font-size: 13px;
         margin-bottom: 20px;
     }
-    .category .categoryProduct h3  button.btn.d-md-none.d-inline-block {
+
+    .category .categoryProduct h3 button.btn.d-md-none.d-inline-block {
         font-size: 13px;
         padding: 0 10px;
     }
+
     .category .categoryProduct h3 span .form-select {
         width: unset;
     }
-    
+
 
     section.category .categoryProduct .card {
         width: 48% !important;
@@ -1285,6 +1304,7 @@ Media
     .ProductCarouse .carousel .carousel-inner .carousel-item .card h5.card-title span, section.category .categoryProduct .card h5.card-title span {
         font-size: 11px;
     }
+
     section.category .categoryProduct .card h5.card-title {
         font-size: 13px;
         margin-bottom: 10px;
@@ -1338,19 +1358,9 @@ Media
         transition: none;
     }
 
-    nav.navbar button.SideBar, section.productDetails .carousel .carousel-indicators button.like, section.productDetails .carousel .carousel-indicators button.share {
-        padding-top: 10px !important;
-    }
 
-    .nav-link {
-        margin-top: 10px !important;
-            display: unset;
-            align-content: unset;
-            flex-wrap: unset;
-            justify-content: unset;
-            align-items: unset;
-        
-    }
+
+
 }
 
 @media (max-width: 575px) {
@@ -1361,5 +1371,5 @@ Media
     .hiddenSearch {
         transition: 1s ease all !important;
     }
-   
+
 }
