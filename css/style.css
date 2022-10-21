@@ -98,14 +98,6 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
     padding: 0 !important;
 }
 
-nav.navbar button.SideBar{
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0 !important;
-}
 
 nav.navbar .navbar-nav a.nav-link, nav.navbar .dropdown button, nav.navbar button.SideBar {
     font-weight: 500;
@@ -1192,6 +1184,15 @@ Media
         margin-left: 10px;
     }
 
+    nav.navbar button.SideBar {
+        display: flex !important;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+        width: 50px !important;
+    }
     section.OfferCarousel .carousel .carousel-control-prev, section.OfferCarousel .carousel .carousel-control-next {
         height: 40px;
         margin: auto 10px;
