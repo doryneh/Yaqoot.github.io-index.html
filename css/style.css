@@ -97,6 +97,10 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
     height: 100%;
     padding: 0 !important;
 }
+button.btn.btn-default.btn-number{
+    width: 25px !important;
+    border: 1px solid #ced4da;
+}
 section.productDetails .addToCart{
     display: flex !important;
     align-content: center;
