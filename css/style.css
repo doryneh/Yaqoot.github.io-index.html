@@ -60,6 +60,7 @@ nav.navbar .offcanvas-start, .offcanvas-start#filter2, .offcanvas-start#filter1 
     width: 100%;
     height: 100%;
     text-align: start;
+    color: black !important;
 }
 nav.navbar .offcanvas-start .offcanvas-body {
     padding: 0px 5px;
