@@ -87,7 +87,7 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
     color: black;
 }
 
-.nav-link, nav.navbar .dropdown button ,section.productDetails .carousel .carousel-indicators button.like, section.productDetails .carousel .carousel-indicators button.share,button.btn.btn-default.btn-number {
+.nav-link, nav.navbar .dropdown button, section.productDetails .carousel .carousel-indicators button.like, section.productDetails .carousel .carousel-indicators button.share, button.btn.btn-default.btn-number {
     display: flex !important;
     align-content: center;
     flex-wrap: nowrap;
@@ -97,11 +97,13 @@ nav.navbar .offcanvas-start .offcanvas-body .list-group-item a {
     height: 100%;
     padding: 0 !important;
 }
-button.btn.btn-default.btn-number{
+
+button.btn.btn-default.btn-number {
     width: 25px !important;
     border: 1px solid #ced4da;
 }
-section.productDetails .addToCart{
+
+section.productDetails .addToCart {
     display: flex !important;
     align-content: center;
     flex-wrap: wrap;
@@ -142,9 +144,26 @@ nav.navbar form {
     width: 50%;
     margin-left: 20px;
 }
-nav.navbar form.completeOrder{
+nav.navbar .bottom-btn{
+    bottom: 2%;
     width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
+nav.navbar .bottom-btn button{
+    width: 90%;
+}
+nav.navbar form.completeOrder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 nav.navbar form input {
     border-radius: 20px;
 }
@@ -152,6 +171,7 @@ nav.navbar form input {
 /*Cart*/
 nav.navbar .offcanvas .offcanvas-body {
     background-color: rgb(245, 245, 245);
+    overflow-x: hidden;
 }
 
 nav.navbar .offcanvas .offcanvas-body p.priceRange {
@@ -187,17 +207,6 @@ nav.navbar .offcanvas .card .card-title {
 nav.navbar .offcanvas .card .card-title-span {
     font-size: 13px;
     margin-bottom: 0;
-}
-
-nav.navbar .cart-body {
-    position: relative;
-
-}
-
-nav.navbar .cart-body .cart-btn {
-    position: absolute;
-    bottom: 5%;
-    width: 90%;
 }
 
 nav.navbar .cart-body .cart-btn button {
@@ -1207,6 +1216,7 @@ Media
         padding: 0 !important;
         width: 50px !important;
     }
+
     section.OfferCarousel .carousel .carousel-control-prev, section.OfferCarousel .carousel .carousel-control-next {
         height: 40px;
         margin: auto 10px;
